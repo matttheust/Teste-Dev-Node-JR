@@ -10,7 +10,7 @@ app.get('/products', (req, res) => {
 
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
-      res.status(500).send('Erro ao ler o arquivo');
+      res.status(500).send('Erro na leitura do arquivo');
       return;
     }
 
@@ -18,7 +18,7 @@ app.get('/products', (req, res) => {
       const products = JSON.parse(data);
       res.json(products);
     } catch (parseErr) {
-      res.status(500).send('Erro ao processar o arquivo JSON');
+      res.status(500).send('Erro no processamento do arquivo JSON');
     }
   });
 });
