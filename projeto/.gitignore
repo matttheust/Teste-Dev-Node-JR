@@ -1,0 +1,20 @@
+# Ignorar a pasta node_modules
+node_modules/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos temporários
+*.tmp
+*.swp
+
+# Ignorar a pasta de build (para projetos front-end)
+dist/
+build/
+
+# Ignorar arquivos de configuração específicos do IDE
+.vscode/
+.idea/
+
+# Ignorar arquivos sensíveis
+.env
